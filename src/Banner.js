@@ -1,10 +1,19 @@
+import React,{useState} from 'react'
 import image from './image.JPG'
 import { GiHamburgerMenu } from "react-icons/gi";
+import {links} from './NavBar'
 
 function Banner(){
+    const [showLinks,setShowLinks] = useState(false);
     return (
-        <div className="banner">
-            <span className="hamburger"><GiHamburgerMenu /></span>
+       <div className="banner">
+            <span className="hamburger" onClick={() => setShowLinks(!showLinks)}><GiHamburgerMenu /></span>
+           <ul className="links-container">
+                {showLinks && links.map((link) => {
+                const {id,url,text} = link;
+                return <li className="links" key={id}><a href={url}>{text}</a></li>
+            })}
+           </ul>
             <div>
                 <div className="shadow"></div>
                 <img src={image} alt="person" className="person-img"/>
