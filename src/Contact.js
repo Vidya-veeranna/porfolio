@@ -17,13 +17,12 @@ function Contact(){
                 </div>
             </article>
             <article className="contact-me">
-                <div className="about-you">
-                    <input type="text" placeholder="Name" />
-                    <input type="text" placeholder="Email" />
-                    <input type="text" placeholder="Subject" />
-                </div>
-                <input type="text" className="message" placeholder="Message..." />
+                    <input type="text" placeholder="Name"  className="name"/>
+                    <input type="text" placeholder="Email" className="email" />
+                    <input type="text" placeholder="Subject"  className="subject"/>
+                     <input type="text" className="message" placeholder="Message..." />
             </article>
+            <button className="btn">Send</button>
         </section>
     );
 }

@@ -305,7 +305,8 @@ h2 span {
 .about-me {
   padding: 10%;
 }
-.btn-container button {
+.btn-container button,
+.btn {
   padding: 0.5rem;
   background-color: #ececec;
   border: 8px solid #ececec;
@@ -316,7 +317,8 @@ h2 span {
     10px 10px 15px rgb(70, 70, 70, 0.12);
 }
 
-.btn-container button:hover {
+.btn-container button:hover,
+.btn:hover {
   color: red;
 }
 .about-detail {
@@ -384,11 +386,53 @@ input {
   padding: 15px;
 }
 .contact-me {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-areas: "a d" "b d" "c d";
   gap: 50px;
 }
-.about-you {
-  flex-direction: column;
+.name {
+  grid-area: a;
+}
+.subject {
+  grid-area: b;
+}
+.email {
+  grid-area: c;
+}
+.message {
+  grid-area: d;
+  text-align: start;
+}
+.btn {
+  width: 100px;
+  margin: 20px;
+  float: right;
+}
+
+/***************Projects*****************/
+
+.projects .btn-container {
+  justify-content: center;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  margin: 20px 100px;
+  gap: 50px;
+  justify-content: center;
+}
+.card {
+  width: 250px;
+  height: 300px;
+  box-shadow: -10px -10px 15px rgb(255, 255, 255, 0.5),
+    10px 10px 15px rgb(70, 70, 70, 0.12);
+  border-radius: 10px;
+}
+.project-img {
+  width: 100%;
+  height: 80%;
+}
+.card h3 {
+  margin-top: 10%;
+  text-align: center;
 }
