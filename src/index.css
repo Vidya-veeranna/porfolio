@@ -263,7 +263,7 @@ section h2 {
 }
 
 h2 span {
-  color: pink;
+  color: #8a49ff;
 }
 
 .img-container {
@@ -317,5 +317,78 @@ h2 span {
 }
 
 .btn-container button:hover {
-  color: #8a49ff;
+  color: red;
+}
+.about-detail {
+  justify-content: center;
+}
+.about-detail button {
+  font-weight: bold;
+}
+.bar {
+  width: 500px;
+  height: 10px;
+  box-shadow: -10px -10px 15px rgb(255, 255, 255, 0.5),
+    10px 10px 15px rgb(70, 70, 70, 0.12),
+    inset -10px -10px 15px rgb(255, 255, 255, 0.5),
+    inset 10px 10px 15px rgb(70, 70, 70, 0.12);
+  border-radius: 10px;
+  background-color: #ececec;
+  display: flex;
+  align-items: center;
+  margin: 0 30px 40px 0;
+}
+.percentage {
+  width: 75%;
+  height: 6px;
+  background-color: #8a49ff;
+  border-radius: 10px;
+}
+p {
+  margin: 10px;
+}
+p span {
+  margin-left: 300px;
+}
+.skills {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+/***********Contact***********/
+
+.contact-detail {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px;
+}
+.contact-detail div {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-detail div,
+.contact-me input {
+  box-shadow: -10px -10px 15px rgb(255, 255, 255, 0.5),
+    10px 10px 15px rgb(70, 70, 70, 0.12);
+  border-radius: 10px;
+  background-color: #ececec;
+  font-size: 17px;
+}
+input {
+  border: none;
+  padding: 15px;
+}
+.contact-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.about-you {
+  flex-direction: column;
 }

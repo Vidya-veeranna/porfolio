@@ -15,6 +15,43 @@ function About(){
                     </div>
                 </div>
             </div>
+            <div>
+                <div className="btn-container about-detail">
+                    <button>Skills</button>
+                    <button>Education</button>
+                    <button>Training</button>
+                </div>
+                <div className="skills">
+                   <div>
+                        <p>HTML <span>75%</span></p>
+                        <div className="bar">
+                            <div className="percentage"></div>
+                        </div>
+                        <p>HTML <span>75%</span></p>
+                        <div className="bar">
+                            <div className="percentage"></div>
+                        </div>
+                        <p>HTML <span>75%</span></p>
+                        <div className="bar">
+                            <div className="percentage"></div>
+                        </div>
+                   </div>
+                   <div>
+                         <p>HTML <span>75%</span></p>
+                        <div className="bar">
+                            <div className="percentage"></div>
+                        </div>
+                        <p>HTML <span>75%</span></p>
+                        <div className="bar">
+                            <div className="percentage"></div>
+                        </div>
+                        <p>HTML <span>75%</span></p>
+                        <div className="bar">
+                            <div className="percentage"></div>
+                        </div>
+                        </div>
+                </div>
+            </div>
         </section>
     )
 }
