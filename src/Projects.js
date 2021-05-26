@@ -1,6 +1,8 @@
+import {ProjectData} from "./ProjectData"
+
 function Projects(){
     return(
-    <section className="projects">
+    <section id="projects">
         <div className="btn-container">
             <button>All</button>
             <button>React</button>
@@ -8,36 +10,19 @@ function Projects(){
             <button>Python</button>
         </div>
         <article className="cards">
-            <div className="card">
-                <div className="project-img">
-                    <img src="E-commerce.png" alt="project-img" className="project-img"/>
-                </div>
-                <h3>E-commerce Website</h3>
-            </div>
-             <div className="card">
-                <div className="project-img">
-                    <img src="E-commerce.png" alt="project-img" className="project-img"/>
-                </div>
-                <h3>E-commerce Website</h3>
-            </div>
-             <div className="card">
-                <div className="project-img">
-                    <img src="E-commerce.png" alt="project-img" className="project-img"/>
-                </div>
-                <h3>E-commerce Website</h3>
-            </div>
-             <div className="card">
-                <div className="project-img">
-                    <img src="E-commerce.png" alt="project-img" className="project-img"/>
-                </div>
-                <h3>E-commerce Website</h3>
-            </div>
-             <div className="card">
-                <div className="project-img">
-                    <img src="E-commerce.png" alt="project-img" className="project-img"/>
-                </div>
-                <h3>E-commerce Website</h3>
-            </div>
+            {ProjectData.map((project) => {
+                let {id,name,img,href} = project
+                return(
+                    <a  key={id} target="_blank" href={href}>
+                        <div className="card">
+                        <div className="project-img">
+                            <img src={img} alt="project-img" className="project-img"/>
+                        </div>
+                        <h4>{name}</h4>
+                    </div>
+                    </a>
+                )
+            })}
         </article>
     </section>
     );

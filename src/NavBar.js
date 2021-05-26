@@ -2,22 +2,22 @@
 export const links = [
   {
     id: 1,
-    url: '/',
+    url: '#banner',
     text: 'Home',
   },
   {
     id: 2,
-    url: '/about',
+    url: '#About',
     text: 'About',
   },
   {
     id: 3,
-    url: '/projects',
+    url: '#projects',
     text: 'Projects',
   },
   {
     id: 4,
-    url: '/contact',
+    url: '#Contact',
     text: 'Contact',
   }
 ]
