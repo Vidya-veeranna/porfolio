@@ -1,5 +1,6 @@
 import image from './image.JPG'
 import resume from './vidya_resume.pdf'
+import {FaSchool} from 'react-icons/fa'
 
 function About(){
     return(
@@ -36,6 +37,50 @@ function About(){
                         <p>Kotlin (<span>Intermediate</span>)</p>
                         <p>React (<span>Intermediate</span>)</p>
                         <p>React Native (<span>Intermediate</span>)</p>
+                    </div>
+                </div>
+                <div className="education">
+                    <div className="timeline">
+                        <div className="timeline-item">
+                            <div className="icon"><FaSchool/></div>
+                            <p>2016-2018 Sep</p>
+                            <p>Nirmala Convent</p>
+                            <p>studied in nirmala convent school mysuru...............................................................................</p>
+                        </div>
+                         <div className="timeline-item even">
+                             <div className="icon"><FaSchool/></div>
+                            <p>2016-2018 Sep</p>
+                            <p>Nirmala Convent</p>
+                            <p>studied in nirmala convent school mysuru...............................................................................</p>
+                        </div>
+                         <div className="timeline-item">
+                             <div className="icon"><FaSchool/></div>
+                            <p>2016-2018 Sep</p>
+                            <p>Nirmala Convent</p>
+                            <p>studied in nirmala convent school mysuru...............................................................................</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="training">
+                    <div className="timeline">
+                        <div className="timeline-item">
+                            <div className="icon"><FaSchool/></div>
+                            <p>2016-2018 Sep</p>
+                            <p>Nirmala Convent</p>
+                            <p>studied in nirmala convent school mysuru...............................................................................</p>
+                        </div>
+                         <div className="timeline-item even">
+                             <div className="icon"><FaSchool/></div>
+                            <p>2016-2018 Sep</p>
+                            <p>Nirmala Convent</p>
+                            <p>studied in nirmala convent school mysuru...............................................................................</p>
+                        </div>
+                         <div className="timeline-item">
+                             <div className="icon"><FaSchool/></div>
+                            <p>2016-2018 Sep</p>
+                            <p>Nirmala Convent</p>
+                            <p>studied in nirmala convent school mysuru...............................................................................</p>
+                        </div>
                     </div>
                 </div>
             </div>

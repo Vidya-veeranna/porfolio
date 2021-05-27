@@ -368,6 +368,56 @@ p {
   color: #8a49ff;
   font-weight: normal;
 }
+.timeline {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  padding: 30px;
+}
+.timeline::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  background-color: #767676;
+  position: absolute;
+}
+.timeline .timeline-item {
+  box-shadow: -10px -10px 15px rgb(255, 255, 255, 0.5),
+    10px 10px 15px rgb(70, 70, 70, 0.12);
+  background-color: #ececec;
+  width: 400px;
+  padding: 20px;
+}
+.timeline .timeline-item:nth-child(odd) {
+  padding-right: calc(50% +50px);
+  text-align: right;
+  margin-left: 200px;
+}
+.timeline .timeline-item:nth-child(even) {
+  margin-left: 860px;
+}
+.icon {
+  box-shadow: -10px -10px 15px rgb(255, 255, 255, 0.5),
+    10px 10px 15px rgb(70, 70, 70, 0.12);
+  background-color: #ececec;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  padding: 5px;
+  border-radius: 50%;
+  color: #8a49ff;
+}
+.timeline .timeline-item:nth-child(odd) .icon {
+  left: 710px;
+}
+.timeline .timeline-item:nth-child(even) .icon {
+  right: 706px;
+}
+
 /***********Contact***********/
 
 .contact-detail {
